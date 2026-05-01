@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-s.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- the timer for exitthe page--->
+	
+<!----- scroll btn ---->	
+	<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+	
+	
+</head>
+<body>
+	<section class="header">
+	<nav>
+	<a href ="index.html"><img src="images/logo.png"></a>
+	<div class="nav-linkss" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+		
+
+<!---dropdown menu---->		
+		
+<div class="container mt-3">
+                                         
+  <div class="dropdown">
+   <button type="button" class="btn btn-primary dropdown-togglee" data-bs-toggle="dropdown">
+      Home
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="index.html">Home</a></li>
+    </ul>
+
+    <button type="button" class="btn btn-primary dropdown-togglee" data-bs-toggle="dropdown">
+     Services
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="Workpermit.html">Work permit Copy</a></li>
+      <li><a class="dropdown-item" href="MOI-Printout.html">MOI PrintOut Copy</a></li>
+      <li><a class="dropdown-item" href="as.html">Authorized Signatory</a></li>
+      <li><a class="dropdown-item" href="documents.html">Documents & Forms</a></li>
+      <li><hr class="dropdown-divider"></hr></li>
+      <li><a class="dropdown-item" href="https://apps.powerapps.com/play/e/default-ff164034-5881-4c75-bba4-a04f468581f2/a/6902cc07-2e0b-4778-9990-c4bbad092bde?tenantId=ff164034-5881-4c75-bba4-a04f468581f2&hint=3b884eb8-3038-460d-aad0-3b922c4c435b&source=sharebutton&sourcetime=1696246428804#" target="_blank">ES Residency Tracker</a></li>
+      <li><a class="dropdown-item" href="calculator\calculator.html">Calculator</a></li>
+    </ul>
+
+    <button type="button" class="btn btn-primary dropdown-togglee" data-bs-toggle="dropdown">
+     Options
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="PAM-Titles.htm">PAM Official Employment Titles</a></li>
+      <li><a class="dropdown-item" href="documents.html">Documents & Forms</a></li>
+      <li><hr class="dropdown-divider"></hr></li>
+      <li><a class="dropdown-item" href="residency_tracker.html">Residency Excel Record</a></li>
+      <li><a class="dropdown-item" href="re-vis-req.html">Residency & visas requirements</a></li>
+       <li><a class="dropdown-item" href="ES-dashboard/index.html">Dashboard</a></li>
+      <li><a class="dropdown-item" href="Bulletins.html">Bulletins</a></li>
+      <li><a class="dropdown-item" href="indoors-or-outdoors\in-out.html">In or Out Door</a></li>
+      <li><a class="dropdown-item" href="nature\nature.html">Nature</a></li>
+    </ul>
+
+    <button type="button" class="btn btn-primary dropdown-togglee" data-bs-toggle="dropdown">
+     SLA
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="SLA.html">Service Level Agreement</a></li>
+    </ul>
+
+<button type="button" class="btn btn-primary dropdown-togglee" data-bs-toggle="dropdown">
+     About - Contact us
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="about.html">About Us</a></li>
+      <li><a class="dropdown-item" href="Links.html">Useful Links</a></li>
+      <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+      </ul>
+
+<button type="button" class="btn btn-primary dropdown-togglee" data-bs-toggle="dropdown">
+     Admin Use
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="Login-page.html">ADMIN Login</a></li>
+    </ul>
+
+  	</div>
+	</div>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+	
+	</nav>
+
+<!--- end dropdown menu--->
+		
+		
+		
+		
+	<!---	
+		<ul>
+			<li><a href ="index.html">HOME</a></li>
+			<li><a href ="Bulletins.html">BULLETINS</a></li>
+			<li><a href ="SLA.html">SLA</a></li>
+			<li><a href ="contact.html">CONTACT</a></li>
+			<li><a href ="Links.html">LINKS</a></li>
+			<li><a href ="about.html">ABOUT</a></li>
+			<li><a href ="Login-page.html">ADMIN</a></li>
+
+		</ul>-->
+	
+	
+	<div class="text-box">
+	<br><br>
+	<h2>Employee Services (ES) WebServices</h2>
+	<!--<p>Employee Services (ES) now providing documents and information services to all AI employees,<br> This is an intranet website run through AI network only.</p>
+<!--	<a href="Workpermit.html" class="hero-btn">Work permit Copy</a>
+	<a href="MOI-Printout.html" class="hero-btn">MOI PrintOut Copy</a>
+	<a href="as.html" class="hero-btn">Authorized Signatory</a>
+	<a href="PAM-Titles.htm" class="hero-btn">PAM Official Employment Titles</a><br><br>
+	<a href="documents.html" class="hero-btn">Documents & Forms</a>
+	<a href="residency_tracker.html" class="hero-btn">Residency Excel Record</a>
+	<a href="re-vis-req.html" class="hero-btn">Residency & visas requirements</a>
+	<a href="https://apps.powerapps.com/play/e/default-ff164034-5881-4c75-bba4-a04f468581f2/a/6902cc07-2e0b-4778-9990-c4bbad092bde?tenantId=ff164034-5881-4c75-bba4-a04f468581f2&hint=3b884eb8-3038-460d-aad0-3b922c4c435b&source=sharebutton&sourcetime=1696246428804#" target="_blank" class="hero-btn">ES Residency Tracker</a>-->
+		<br>
+		<h3>:: Important Notification ::</h3>
+		With reference to Ministry of Interior (MOI) regulations and decisions update<br>
+		MOI has announced last Thursday 16/11/2023, employees under residency article 17 workers in government<br>
+		are not allowed anymore to transfer to private sector under article 18.<br><br>
+			
+	<!----Serches bar--->
+    <div class="wrapper">
+      <div class="search-input">
+        <a href="" target="_blank" hidden></a>
+        <input type="text" placeholder="Search... Type word or url and click >>">
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon"><i class="fas fa-search"></i></div>
+      </div>
+    </div>
+    <script src="js/suggestions.js"></script>
+    <script src="js/script.js"></script>
+    <br><br>
+    <h4>Scroll down for more information</h4>
+	</div>
+		
+	</section>
+	
+<!--------course----------->
+
+
+<section class="course">
+<div id="capture" style="padding: 10px; background: #f5da55">
+    <h4 style="color: #000; "><font size="5" face="Segoe UI">Services We Offer</font></h4>
+</div>
+
+<!---<h1>Services We Offer</h1> -->
+<p>Employee Services (ES) offering Web Documents Services.</p>
+<div class="row">
+<div class="course-col">
+<h3>WorkPermit</h3>
+<p>ES WebServices providing a copy of WorkPermit for (Renewal - Local Transfer - First Time) residencies, this is an electronic copy and can officially use for all needed.</p>
+</div>
+<div class="course-col">
+<h3>MOI-PrintOut</h3>
+<p>ES WebServices providing a copy of Residency PrintOut for all residency has been stamped, this is an electronic copy and it is official copy can be use for all needed.</p>
+</div>
+<div class="course-col">
+<h3>Authorized Signatory</h3>
+<p>ES WebServices providing a copy of Authorized Signatory, this is an electronic copy and it is official copy can be use for all needed.</p>
+</div>
+<div class="course-col">
+<h3>Documents &amp; More</h3>
+<p>ES WebServices providing Documents and forms for cretin process, is an electronic Documents and it is official copy can be use for all needed.</p>
+</div>
+
+</div>
+</section>	
+	
+<!------campus------>
+<section class="campus">
+<h1>Our Office Location</h1>
+
+<p>Employees Services (ES) location.</p>
+<br>
+<h5>Hover your mouse over the pictures</h5> 
+
+<div class="row">
+
+	<div class="campus-col">
+	<img src="images/shareq-ker.jpg">
+	<div class="layer">
+		<h3>KRe - SAREQ</h3>	
+		</div>
+	</div>
+
+	<div class="campus-col">
+	<img src="images/Al_Hamra_Tower.jpg">
+	<div class="layer">
+		<h3>Alhamrah - SHAREQ</h3>	
+		</div>
+	</div>
+
+<div class="campus-col">
+	<img src="images/Alghanim-Showroom.jpg">
+	<div class="layer">
+		<h3>SHOWROOMS</h3>	
+		</div>
+	</div>
+</div>
+</section>	
+	
+<!-------Facilities-------->
+<section class="facilities">
+	<h1>ES Department Overviews</h1>
+	<p>Overviews for ES department - work space and team.</p>
+	
+	<div class="row">
+	<div class="facilities-col">
+	<img src="images/office1.jpeg">
+	<h3>ES Meeting Room</h3>
+	<p>ES Meeting Room were ES employees gathering and meeting for business process and improve.</p>
+	</div>
+<!-----removed------
+	<div class="facilities-col">
+	<img src="images/office2.jpeg">
+	<h3>Largest playing Ground</h3>
+	<p>lorem ipsum dolor sit amet, consecteture adipiscing elite. pellentesquem aliquet turpis nulla</p>
+	</div>
+--->
+	<div class="facilities-col">
+	<img src="images/office3.jpeg">
+	<h3>ES Working Space</h3>
+	<p>ES Working Space were ES employees manufacturing a great loop of work and serve AI employees regarding their residencies.</p>
+	</div>
+	
+	<div class="facilities-col">
+	<img src="images/office4.jpeg">
+	<h3>ES Entrance Hall</h3>
+	<p>ES entrance space were placed in the 1st floor in KRe tower, big reception can fit a plenty employees for serving their requests.</p>
+	</div>
+
+	</div>
+</section>	
+	
+<!------- testimonials ---------->
+<section>
+	<div class="testimonials">
+	<h1>What Our Customers say</h1>
+	<p>Feedback from some of our value customers.</p>
+
+	<div class="row">
+	<div class="testimonial-col">
+	<img src="images/user1.jpg">
+	<div>
+	<p>Employee Services (ES) is one of the powerful core for entire Alghanim Industries, they are handling all residencies and visas, We dont hestate about our residencies.</p>
+	<h3>Christeen berly</h3>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star-o"></i>
+	</div>
+	</div>
+	
+	<div class="testimonial-col">
+	<img src="images/user2.jpg">
+	<div>
+	<p>I got First time residency in few days from the date i enter Kuwait, ES did a big effort for that it was so helpfull, they are working in profossional way.</p>
+	<h3>Tom Hanks</h3>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star"></i>
+		<i class="fa fa-star-half-o"></i>
+	</div>
+	</div>
+	</div>
+	
+</div>
+</section>	
+	
+<!-------Call to Action------------>
+<section class="cta">
+	<h1>Enroll For Our services<br>From ES Webservices.</h1>
+	<a href="contact.html" class="hero-btn">CONTACT US</a>
+</section>	
+
+
+<!------scroll option--------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+	
+<!-------footer------------>	
+	<section class="footer">
+	<h4>About Us</h4>
+	<p>Learn about Employee services (ES) process and services.</p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-handshake-o"></i> By Employee Services Experts®</p>
+	</section>
+	
+
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+</script>
+
+
+</body>
+
+</html>

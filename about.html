@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+             var IDLE_TIMEOUT = 600; //seconds
+                var _idleSecondsCounter = 0;
+                document.onclick = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+                };
+                window.setInterval(CheckIdleTime, 1000);
+
+                function CheckIdleTime() {
+                _idleSecondsCounter++;
+                var oPanel = document.getElementById("SecondsUntilExpire");
+                if (oPanel)
+                oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                //alert("Time expired!");
+                document.location.href = "autologout.htm";
+                }
+                }
+        </script>
+
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+	<a href ="index.html"><img src="images/logo.png"></a>
+	<div class="nav-links" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href ="index.html">HOME</a></li>
+			<li><a href ="Bulletins.html">BULLRTINS</a></li>
+			<li><a href ="SLA.html">SLA</a></li>
+			<li><a href ="contact.html">CONTACT</a></li>
+			<li><a href ="Links.html">LINKS</a></li>
+			<li><a href ="about.html">ABOUT</a></li>
+							
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>About Us</h1>
+	</section>
+	
+<!----- about us contain ----->
+<section class="about-usx">
+	<div class="row">
+	
+		<div class="about-col">
+		<h1>Employee Services (ES) WebServices</h1>
+		<p>This website providing work permit copies
+			in PDF format, it required CivilID number to look for work permit
+			link to excel sheet to help look for CivilID number
+			its a dynamic service provided it by ES department
+			The Employee Services team can assist you with the following:</p>
+						
+		<b>Visa Issuance</b><br>
+  * NOC (No Objection Certificate)<br>
+  * Commercial Visit Visa<br>
+<br>
+		<b>Residency</b><br>
+* First time residency<br>
+* Local transfer<br>
+* Renewal of residency<br>
+* Transfer of residency to new passport<br>
+* Nationality changes<br>
+* Residency cancellation<br>
+* Edit information on residency or work permit<br>
+* Residency transfer out of the company<br>
+<br>
+		<b>Kuwaitzation formalities</b><br>
+* Register new Kuwaiti hire employee in PIFSS (Public Authority for Social Security)<br>
+* Register new Kuwaiti hire employee in PAM (Public Authority of Manpower)<br>
+* Register new Kuwaiti hire employee in MGRP within PAM (Public Authority of Manpower)<br>
+* Work permit renewal and amendment<br>
+* Cancellation from PIFSS, PAM and MGRP<br>
+* Issuance of MGRP salary certificate<br>
+* Edit Kuwaiti employee information in MGRP.<br>
+<br>
+		<b>Business unit services</b><br>
+* Register new legal entities in PAM<br>
+* Issuing and renewing authorization signatories<br>
+* Adding branches to the authorization signatories<br>
+* Allocating manpower to each trade license<br>
+* Identifying job titles in each trade license<br>
+* Issuing Kuwaitzation compliance certificates<br>
+<br>
+<i><b>Additional services for Managers and above:</b></i><br>
+* Civil ID<br>
+* Driving license<br>
+* Family visit visas<br>
+* Family dependent visas<br>
+* Family Stamping residency<br>
+* Civil ID for family members<br>
+* Traveling visas to KSA<br>
+
+<p><u><b><font color="#F44336">Note: Please do not missed used this service and documents</font></b></u></p>
+		<a href="index.html" class="hero-btn red-btn">HOME</a>
+		</div>
+		<div class="about-col">	
+		<img src="images/banner2.jpg">
+	</div>
+</section>	
+	
+	
+<!-------footer------------>	
+	<section class="footer">
+	<h4>About Us</h4>
+	<p>Learn about Employee services (ES) process and services.</p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-handshake-o"></i> By Employee Services Experts®</p>
+	<p>Khaldoun Kahaleh (ES Analyst) Ext.2613 - kkahaleh@alghanim.com</p>
+	</section>
+
+
+
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<html>
+  <head>
+  
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        form{
+            width: 18%;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #A5D7E8;
+        }
+ 
+    </style>
+  </head>
+  <style>
+    *{
+      font-family: Arial, sans-serif;
+    }
+    form{
+      margin: 15px 5px;
+      width: 500px;
+      font-size: 16px;
+    }
+    form h1{
+      text-align: center;
+    }
+    form label{
+      display: block;
+      margin-bottom: 5px;
+    }
+    form input, form textarea{
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    form button{
+      background: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover{
+      background: green;
+    }
+    
+    div.container{
+            display: flex;
+            justify-content: center;
+        }
+  </style>
+  <body bgcolor="#000099">
+  <div class="container">
+    <form>
+	  ES Web-Services
+      <h1>Send info through WhatsApp</h1>
+      <p align="left">
+      <label for="">Name</label>
+      <input type="text" class="name"placeholder="Enter your name." required>
+
+      <label for="">Email</label>
+      <input type="text" class="email"placeholder="Enter your Email." required>
+
+      <label for="">Division</label>
+      <input type="text" class="division"placeholder="Enter your division." required>
+
+      <label for="">Message</label>
+      <textarea class="message"></textarea>
+      <button type="button" onclick="sendwhatsapp();">Send Via WhatsApp</button>
+      <!--<button onClick="window.open('index.html')">Cancel - Go Home</button><br> -->
+      </p>
+
+    </form>
+</div>
+<p align="center">
+<a href ="index.html"><font color="#FFFFFF">HOME</font></a>
+    <script>
+      function sendwhatsapp(){
+       var phonenumber = "+96566079934";
+
+       var name = document.querySelector(".name").value;
+       var email = document.querySelector(".email").value;
+       var division = document.querySelector(".division").value;
+       var message = document.querySelector(".message").value;
+
+       var url = "https://wa.me/" + phonenumber + "?text="
+       +"*Name :* "+name+"%0a"
+       +"*Email :* "+email+"%0a"
+       +"*division:* "+division+"%0a"
+       +"*Message :* "+message
+       +"%0a%0a"
+       +"Please check my data";
+
+       window.open(url, '_blank').focus();
+     }
+    </script>
+  </p>
+  </body>
+</html>

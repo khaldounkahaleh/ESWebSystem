@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+<title>ES employees contact number</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<h2 align="center"><span style="font-weight: 400">
+<font face="Segoe UI" size="3"><a href="index.html">Home</a></font></span></h2>
+<h2><font face="Segoe UI">ES employees contact number.</font></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="border-style:solid; border-width:1px; width:60%"><font face="Segoe UI">Name</font></th>
+    <th style="border-style:solid; border-width:1px; width:40%"><font face="Segoe UI">Extension</font></th>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Saleh Alasfour</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2444</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Abdul Aziz Almutairi</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2551</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Khaldoun Kahaleh - (First time residency)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2613</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Bader jasem</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2612</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Khadije Almousawi - (Kuwaitization)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2674</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Nour Elmel</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2750</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Fatima Abdullah - (Local Transfer)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">4950</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Salwa Alhashash - (CVV process)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2745</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Abdullah Alhassan - (NOC process)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2245</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Abdulrahman Abdullah - (Transfer info - 
+	edit info - transfer out)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">3252</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Ali Thahir - (Residency Renewal - 
+	Absconding)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2226</font></td>
+  </tr>
+  <tr>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">Mohammed Alanezi - (Residency Renewal)</font></td>
+    <td style="border-style: solid; border-width: 1px" bordercolor="#FFFFFF"><font face="Segoe UI" size="3">2623</font></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>

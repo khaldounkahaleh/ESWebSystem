@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+             var IDLE_TIMEOUT = 700; //seconds
+                var _idleSecondsCounter = 0;
+                document.onclick = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+                };
+                window.setInterval(CheckIdleTime, 1000);
+
+                function CheckIdleTime() {
+                _idleSecondsCounter++;
+                var oPanel = document.getElementById("SecondsUntilExpire");
+                if (oPanel)
+                oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                //alert("Time expired!");
+                document.location.href = "autologout.htm";
+                }
+                }
+        </script>
+
+	
+<!----- scroll btn ---->	
+	<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+	<a href ="index.html"><img src="images/logo.png"></a>
+	<div class="nav-links" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href ="index.html">HOME</a></li>
+			<li><a href ="Bulletins.html">BULLRTINS</a></li>
+			<li><a href ="SLA.html">SLA</a></li>
+			<li><a href ="contact.html">CONTACT</a></li>
+			<li><a href ="Links.html">LINKS</a></li>
+			<li><a href ="about.html">ABOUT</a></li>				
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Our Service Level Agreement SLA for 2023</h1>
+
+	</section>
+	
+<!---- drop down list ------>
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  align: center;
+  padding: 5px 10px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+	
+<!------scroll option--------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!-------blog page content------------>	
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Click for SLA topics easy access</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#First Time Residence">First Time Residence - FT</a>
+    <a href="#Residency Renewal">Residency Renewal</a>
+    <a href="#Transfer of Residence for local Hires">Local Transfer - LT</a>
+    <a href="#Residency Transfer to new passport">Transfer to new passport</a>
+    <a href="#NOC">NOC </a>
+    <a href="#Civil ID">CivilID</a>
+    <a href="#CVV">CVV</a>
+    <a href="#Separation from Company">Separation</a>
+    <a href="#Documents Attestation">Doc Attestation</a>
+    <a href="#Family residency article 22">Family residency</a>
+    <a href="#Driving License requirements">DL requirements</a>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<section class="blog-content">
+	<div class="row">
+		<div class="blog-left">
+		<img src ="images/sla-logo.jpg">
+		<h2>Our Service Level Agreement SLA for 2023</h2>
+		<p>Service Level Agreement SLA Between Human Resources - Employee Services & Corporate HR Group within Alghanim Industries-AI
+
+Following is the agreement for providing various Government related services to Corporate HR Group. The Services broadly include Residence Visas, Civil Ids, local Transfers, Separation, NOC, attestations in MOFA – COM – Ministry of justice, Kuwait Engineering society KES and Commercial Visas. Employee Services, here in called ES will provide the services detailed below to Corporate HR Group called CG.
+</p>
+	<br>
+	<p><h3>1.	Residence Visas</h3>
+	<h3><a name="First Time Residence">1.1.	First Time Residence</a></h3>
+
+<span class="bolded">1.1.1.</span>	Recruitment team in CG need to submit the following documents to ES within 10 calendar days of new employee arrival date: <br>
+•	Memo to start the residency process with PF number. (Reason for PF is required to link to cost center and BU relevant).<br>
+•	Original passport + (2 passport copies – first page + entry date)<br>
+•	Original NOC + 2 copies two sides.<br>
+•	Original police clearance attested by (Kuwait embassy in the country of origin, home country ministry of foreign affairs and country embassy in Kuwait). (GS will take the responsibility for the attestation of Kuwaiti foreign affairs and the translation).<br>
+•	Attestation fees will be charged to the cost center. <br>
+•	Driving license certificate from embassy if (representative or driver), for some nationalities we might ask for original driving license. The documents must be attested from country foreign affairs and country embassy in Kuwait.<br>
+•	Original degree attested from country foreign affairs and country embassy in Kuwait (if applicable). <br>
+•	ES to provide a weekly update on the status of the new joiners’ residency transfer. In case the tracker is down, ES must provide a weekly update. <br>
+<span class="bolded">1.1.2.</span>	During process of residence visa, employees do not have any document to carry to prove their legal residence status in Kuwait. For this period, HR will provide a visa and passport copy which should be carried by all employees till the time Civil Id is issued.<br>
+<span class="bolded">1.1.3.</span>The process cycle time is 30 working days and might get more based on the rules and regulations of Kuwait Authorities<br>
+Note: Residency must be stamped within 60 days of date of entry as per ministry rules, residency extension applies only when ES has issues with internal process or ministry system has issues or down. <br>
+<span class="bolded">1.1.4.</span>ES management will take the decision concerning the auto visa extension. <br>
+<span class="bolded">1.1.5.</span>	Any delay from business side in document submission after 10 days of the arrival date, the BU must consider 2KD per day residency fines implementation, also as same with ES if the BU submit the documents prior 10 days and 60 days passed without stamping the residency.<br>
+<span class="bolded">1.1.6.</span>ES will confirm once the passport is sent to the HR Business Partner.<br>
+<h3>1.2.	Medical & Finger Printing:</h3>
+<span class="bolded">1.2.1.</span>	The process starts when ES sending an email to BA and onboarded two working days prior for medical check and fingerprint exercise. Details of (Employees, Mandoub, Meeting points & Timings) for the medical and fingerprint check out are included in the email. <br>
+<span class="bolded">1.2.2.</span>	Transportation for medical & finger printing should be arranged by the BA. He/She should ensure that the staff reaches the clinic at the agreed meeting point on time.<br>
+<span class="bolded">1.2.3.</span>	Business will provide at least one full day away from work for employees undergoing the medical and finger printing tests. All employees must be dropped back at the place of work on completion of tests.<br>
+<span class="bolded">1.2.4.</span>	The head of each of the CG centers, whose employees are undergoing tests should be informed by the BA that his employees will be away for medical and fingerprint tests.<br>
+</p>
+	<br>
+	<p><h3><a name="Residency Renewal">1.3.	Residency Renewal</a></h3>
+
+<span class="bolded">1.3.1.</span>System Trigger Email to the employee if TH existed or to the HR/HRBP for employees who doesn’t have TH 3 months prior to residency expiry. However, the renewal request must	be sent two months prior to residency expiry. ES has the authority to reject requests sent	more than 60 days (Approval of HR manager is compulsory for request prior than 60 days). <br>
+<span class="bolded">1.3.2.</span>	BA must contact the employee and takes their agreement for residency renewal. Renewal request raised through Talenthub, Manual request is prepared by BA and signed by Admin/HR manager if the employee doesn’t have Talenthub account. Details and number of years of renewal (maximum three years), job title if changed are clearly mentioned on the renewal request. It is essential that the salary and job title match the records at the payroll records (Talenthub – SAP). The request must be approved by Admin/HR manger- CG before sending to ES.<br>
+<span class="bolded">1.3.3.</span>	BA should attach the following documents for the renewal request before sending to ES; (in case this process applied through Talenthub, residency request by email services will be not applicable)<br>
+•	Civil ID copy<br>
+•	Passport copy<br>
+•	Degree copy attested translated (if applicable)<br>
+•	Driving license copy (if applicable)<br>
+•	Signed work contract with blue pen in second party. <br>
+•	Be sure all requirements and work contract sent as A4 size with PDF format and clear to read – ministry requirements)<br>
+<span class="bolded">1.3.3.1.</span>	All residence renewal requests must reach ES within the first 10 days of the 60 days notification prior to residence expiry, any delay, penalties apply 2KD per day for expiry residency. <br>
+<span class="bolded">1.3.3.2.</span>All staff proceeding on leave must be notified about their residency renewal in advance of traveling on leave by BA.<br>
+<span class="bolded">1.3.3.3.</span>All early renewals should be approved by HR Manager with the process, title and salary can’t be changed.<br>
+<span class="bolded">1.3.3.4.</span>	Information will be updated on daily report and documents will be updated in the share folder and should be accurate and updated according to the residency renewal.<br>
+<span class="bolded">1.3.3.5.</span>Residency renewal process takes approximately 14 working days and might get more based on the rules and regulations of Kuwait Authorities.<br>
+<span class="bolded">1.3.3.6.</span>	On receipt of the information that residency is stamped, ES will poste the following documents in the share folder for the employees whose residency is stamped:<br>
+•	Work permit.<br>
+•	MOI residency printout.<br>
+•	Residency tracker in Excel Sheet for Following up.<br>
+</p>
+	<br>
+	<p><h3><a name="Transfer of Residence for local Hires">1.4.	Transfer of Residence for local Hires</a></h3>
+
+<span class="bolded">1.4.1.</span>	Recruitment team of CG sends ES the following documents to prepare the transfer documents after getting the confirmation from ES about residency transferability (online checkup – this exam will be show up with the current sponsor):<br>
+•	Residency transfer request with title and salary signed by HR Manager. Furthermore, there must be a cooperation between ES employee and HR regarding title selection.<br>
+•	Passport copy.<br>
+•	Civil ID copy.<br>
+•	Residency sequence report for MOl (if needed).<br>
+•	Degree copy attested and translated (if needed).<br>
+•	Kuwaiti driving license copy (if needed).<br>
+•	Work Permit and Authorized Signatory are compulsory. <br>
+<span class="bolded">1.4.2.</span>Upon employee joining, recruitment team must send ES the following to start the residency transfer process by email:<br>
+•	Transfer documents signed by ex-employer by blue pen. (Article 17 and 22).<br>
+•	End of Service Letter from provided ex-sponsor. (Article 17).<br>
+•	Signed Work Contract with blue pen in PDF and colored format. (Article 18, 17 and 22).<br>
+•	MOI Form signed by ex-sponsor (Article 17 and 22); MOI form signed by current sponsor (Article 18). <br>
+•	Work permit copy. (If applicable) (Article 18).<br>
+•	Passport and residency copy. (Article 18, 17 and 22).<br>
+•	Civil ID Copy. (Article 18, 17 and 22).<br>
+•	PF number. (Article 18, 17 and 22).<br>
+•	Copy driving license if (driver). (Article 18, 17 and 22).<br>
+•	Copy degree (Kuwait embassy in the country of origin, Kuwait ministry of foreign affairs, translation to Arabic and attestation from Kuwait ministry of justice) if applicable. (Article 18, 17 and 22).<br>
+<span class="bolded">1.4.3.</span>	The process cycle time after receiving the transfer documents is 14 working days for article 18 for article 17 – 22, might get more based on the rules and regulations of Kuwait Authorities.<br>
+<span class="bolded">1.4.4.</span>For fingerprints, please refer to point 1.2. Adding that, the estimation time is 10-14 working days. <br>
+<span class="bolded">1.4.5.</span>For medical check (if applicable), please refer to point 1.2. Adding that, the estimation time is 20 working days. <br>
+</p>
+	
+	<br>
+	<p><h3><a name="Residency Transfer to new passport">1.5. Residency Transfer to new passport</a></h3>
+	
+<span class="bolded">1.5.1.</span>First step for residency transfer to new passport is to send the following to ES:<br>
+•	Original and copy of new passport.<br>
+•	Original and copy of old passport.<br>
+•	Civil ID copy.<br>
+•	photos with blue background.<br>
+<span class="bolded">1.5.2.</span>Employee has to check the employee status in MOI if he has any traffic violation and 	legal cases within Ministry of Interior and Ministry of Justice through www.moi.gov.kw.<br>
+<span class="bolded">1.5.3.</span>Process cycle time is (5) working days from the date of receiving by ES.<br>
+</p>
+
+<br>
+	<p><h3><a name="Civil ID">2. Civil ID</a></h3>
+
+<h3>2.1.	First time Civil ID for all overseas hires</h3>
+<span class="bolded">2.1.1.</span>On getting notification that residence of employee is stamped, CivilID can process and 	submitted through online website portal, BA get all the documents listed below to process 	the CivilID, All with jpeg format.<br>
+•	Passport scan copy.<br>
+•	photos with blue background (4x6).<br>
+•	Work permit copy.<br>
+•	Rental Contract of residence with PACI number.<br>
+•	Blood Group. <br>
+<span class="bolded">2.1.2.</span>Employee should follow up the status of Civil ID using any of the following two ways:<br>
+•	Calling 1889988 and follow the instructions.<br>
+•	Visit www.paci.gov.kw go to E-Services Portal (https://www.paci.gov.kw/Eservices/Services.aspx)<br>
+<span class="bolded">2.1.3.</span>It's the responsibility of the employee to follow up civil id and collect it.<br>
+</p>
+
+<br>
+	<p><h3>2.2.	     Transfer of Civil ID for employees hired from Kuwait Market</h3>
+
+<span class="bolded">2.2.1.</span>	local transfer process takes two weeks. BU/Onboarding will receive daily accurate report with the residency process data in place of the current state, BU/Onboarding to advice the employee to renew the CivilID as stated below. Furthermore, all work permit and MOI print will be available in share folder. <br>
+•	Calling 1889938 and follow the instructions.<br>
+•	Visit www.paci.gov.kw to process the renewing CivilID.<br>
+<span class="bolded">2.2.2.</span>It's the responsibility of the employee to process and follow up civil id and collect it.<br>
+</p>
+
+<br>
+	<p><h3>1.3.	      Renewal of CivilID</h3>
+
+<span class="bolded">2.3.1.</span>	Once BA checked the residence status of employee is renewed, BA should coordinate with the concerned employees and support them in getting the CivilID renewed using any of the following two ways.<br>
+•	Calling 1889988 and follow the instructions.<br>
+•	Visit www.paci.gov.kw to process the renewing CivilID.<br>
+<span class="bolded">2.3.2.</span>It's the employee’s responsibility to follow up with CivilID and collect it.<br>
+</p>
+
+<br>
+	<p><h3><a name="NOC">3.	No objection certificate - NOC:</a></h3>
+	
+<span class="bolded">3.2.</span>	ES should be provided with filled up NOC form (signed by HR Manager + HR Director) for processing, it usually takes between 20 to 25 working days and might get more based on the rules and regulations of Kuwait Authorities.<br>
+•	Passport Copy.<br>
+•	Degree Copy.<br>
+•	Driving license copy. <br>
+•	List of name and information in excel sheet - for big information’s qty.<br>
+To get the visa processed at the ministry. There are some restrictions for certain nationalities, processing of visa for them might take longer.<br>
+<span class="bolded">3.3.</span>	recruitment team are fully responsible for the provided data and info to be correct and complete with clear documents. In addition, the recruitment team need to be sure that passport validity should not be less than 2 years and one month. <br>
+<span class="bolded">3.4.</span>	ES to review the documents upon receiving and ensure accuracy of documents and acknowledge receipt of the documents within 1 working day. If there is no reply from ES that means documents are accurate.  <br>
+<span class="bolded">3.5.</span>Candidate must enter Kuwait within 90 days of NOC issuing date.<br>
+<span class="bolded">3.6.</span>Once the eNOC is ready ES will inform the business through email. (Soft copy)  <br>
+<span class="bolded">3.7.</span>For nationalities that require Arabic contract, fully attested, and approved Arabic contract must be provided by the ES team along with the eNOC.<br>
+<span class="bolded">3.8.</span>No NOC required for GCC Citizens, as they can enter Kuwait without visa for work.<br>
+</p>
+
+<br>
+	<p><h3><a name="CVV">4.	Commercial Visit Visa – CVV:</a></h3>
+
+<span class="bolded">4.1.</span>CVV Process<br>
+<span class="bolded">4.1.1.</span>Recruitment team must provide a completed CVV form 7 days prior to the arrival of the visitor (signed by VP and HR Manager).<br>
+•	Passport Copy (passport validity not less than six months and one week)<br>
+•	Degree Copy + Arabic translation.<br>
+to get the visa processed at the ministry. There are some restrictions for certain nationalities, processing of visa for them will need high approvals and take longer. Degree copy with translation if need it must provide for Asian and Arabic nationalities. GCC resident must provide the GCC residency copy with high title.<br>
+<span class="bolded">4.1.2.</span>	Each visit to Kuwait must not exceed 30 days from the day of arrival, otherwise penalty of K.D 10/- will be accumulated for each day, if the visitor has delay more than one week after the 30 days in Kuwait, MOI will list the visitor and the company in the blacklist as per MOI CVV rules.<br>
+<span class="bolded">4.1.3.</span>No CVV required for GCC Citizens, as they can enter Kuwait without visa.<br>
+</p>
+
+<br>
+	<p><h3><a name="Separation from Company">5.	Separation from Company:</a></h3>
+
+<span class="bolded">5.1.</span>Declarations<br>
+<span class="bolded">5.1.1.</span>	At the time of leaving the company, BA/HR should inform the employee to understand that he/she must transfer to another company or request cancellation to leave Kuwait, within two months after the resignation or termination. Any delay on that an absconding to be <br>
+</p>
+
+<br>
+	<p><h3><a name="Documents Attestation">6.Documents Attestation</a></h3>
+
+<span class="bolded">6.1.1.</span>	ES are responsible to do documents attestation for the first-time residency only for (PCC Certificates, Work Contracts) in Ministry of foreign affairs MOFA and chamber of commerce. <br>
+<span class="bolded">6.1.2.</span>ES are responsible to do documents registration for engineer’s title for the first-time residency only in (KES Kuwait Engineering society).<br>
+•	Academic Certificate.<br>
+•	Colleague Certificate.<br>
+•	Academic transcript.<br>
+•	Member certificate. <br>
+<span class="bolded">6.1.3.</span>Attestation in MOFA and chamber of commerce takes 7 to 14 days, and it might get more based on the rules and regulations of Kuwait Authorities.<br>
+<span class="bolded">6.1.4.</span>	Registration in KES Kuwait Engineering society take 7 to 10 days, and it might get more based on the candidate nationality and the rules and regulations of Kuwait Authorities.<br>
+</p>
+
+<br>
+	<p><h3><a name="Family residency article 22">7.	Family residency article 22.</a></h3>
+
+•	Wife must provide PCC for family NOC.<br>
+•	Kids only less than 16 years old for family NOC.<br>
+•	Sponsor salary work permit 500KD and above.<br>
+</p>
+
+<br>
+	<p><h3><a name="Driving License requirements">8.Driving License requirements</a></h3>
+
+<span class="bolded">8.1.</span>Level 8 and above. <br>
+•	Academic certificate<br>
+•	Salary no less 600kd <br>
+•	Original country driving license.<br><br>
+
+<span class="bolded">8.2.</span>Accountants and Mandoub<br>
+•	Salary no less 600kd <br>
+•	Original country driving license.<br><br>
+
+<span class="bolded">8.3.</span>Engineers<br>
+•	Salary no less 450kd <br>
+•	Academic certificate<br>
+•	Original country driving license.<br><br>
+
+<span class="bolded">8.4.</span>Driver <br>
+•	The title in the Work permit should be driver.<br>
+•	Original country driving license.<br>
+</p>
+
+<br>
+	<p>This is to illustrate that; all the mentioned processes might be adjusted in the future based on the government regulatory framework and instructions. However, these are the solid base concerning the requirements of the processes.</p>
+
+<br>
+		
+	
+	
+		<div class="comment-box">
+		
+			<h3>Leave a Comment</h3>
+		
+
+
+				<form action="https://formspree.io/f/xnqklykd" method="post" class="comment-form">
+				<input type="text" name="name" placeholder="Enter your name." required>
+				<input type="email" name="email" placeholder="Enter Email address." required>
+				<input type="text" name="Subject" placeholder="Enter your subject." required>
+				<textarea rows="8" name="Message" placeholder="Message" required></textarea>
+				<button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+				</form>		
+			</div>
+		
+		</div>	
+	
+	
+		<div class="blog-right">
+		<h3>Post Categories</h3>
+
+			<div>
+			<span>Residency Renewal</span>
+			<span>55</span>
+			</div>
+			
+			<div>
+			<span>NOC</span>
+			<span>28</span>
+			</div>
+		
+			<div>
+			<span>First Time</span>
+			<span>15</span>
+			</div>
+
+			<div>
+			<span>Local Transfer</span>
+			<span>34</span>
+			</div>
+
+			<div>
+			<span>Cancellation</span>
+			<span>22</span>
+			</div>
+
+			<div>
+			<span>CVV</span>
+			<span>42</span>
+			</div>
+
+			<div>
+			<span>Transer Info</span>
+			<span>30</span>
+			</div>
+			
+			<div>
+			<span>Edit Info</span>
+			<span>23</span>
+			</div>
+			
+			<div>
+			<span>Kuwaitization</span>
+			<span>17</span>
+			</div>
+			
+			<div>
+			<span>Absconding</span>
+			<span>11</span>
+			</div>
+
+
+		</div>
+	</div>
+
+</section>
+
+
+<!-- <iframe src="https://moi.gov.kw" width=100% height=100%></iframe>-->
+	
+<!-------footer------------>	
+	<section class="footer">
+	<h4>About Us</h4>
+	<p>Learn about Employee services (ES) process and services.</p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-handshake-o"></i> By Employee Services Experts®</p>
+	</section>
+
+
+
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+       
+</script>
+
+
+
+
+</body>
+
+</html>

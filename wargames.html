@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Wargames</title>
+  </head>
+  <body style="background-color:black;font-family:courier;color:#05fa0d;">
+    <p align="left">
+    <span id="content"></span><span style="height:20px;width:20px;background-color:#05fa0d;">&nbsp;</span>
+    <script>
+      var menu = [
+      	  " ",
+          "ES Announcments",
+          "With updates came from Public authority and manpower (PAM) regulations, they announced",
+          "early this week that employees aged 60 and above are exempted from",
+          "*** Expat with age 60years old are exempted from. ***",
+          " ",
+          "Explenation.",
+          "1- Medical insurance 503KD.",
+          "2- Work permit 250KD fees.",
+          "3- University certificate.",
+          "they can now proceed with residency renewal as normal or transfer as before with the normal fees. Also, PAM has",
+          "updated some regulations regarding the VIP files (golden list) that employees can transfer from VIP files (Golden list)",
+          "to private sector article 18, conditions applied for employees who didn’t complete one year with fees 300KD assigned",
+          "by PAM committee.",
+          "Biometric fingerprint update by (MOI).",
+          " ",
+          "With reference to the biometric fingerprint update from ministry of interior (MOI), expats who didn’t do the biometric fingerprint are blocked from several services as below.",
+          "1- Bank transaction.",
+		  "2- Travel outside the country.",
+	      "3- Residency (renewal – transfer – extension).",
+	      "4- All government processes.",
+		  "To check your biometric fingerprint status please access the SAHAL mobile app and enter your CivilID number for verification",
+		  "Please follow these steps for biometric fingerprint check verification",
+		  "1- Open the SAHAL all in your mobile (this service is not available in the web) English version.",
+		  "2- After accessing the app below the screen click services option.",
+		  "Look for Ministry of interior, click on the small arrow and select Security Services",
+		  "Go for third selection Verifying the necessity of performing a biometric enrollment",
+		  "Your CivilID number appeared on the selection click NEXT",
+		  "It will show up in green icon for completing the biometric fingerprint and in red icon if need to do it.",
+		  "To do appointment go to SAHAL app and book the appointment",
+		  " ",
+          " "
+		],
+        i = 0, j, item, html,
+        e = document.getElementById("content"),
+        doChar = function() {
+          e.innerHTML += item[j++];
+          if (j < item.length) {
+            setTimeout(doChar, 10);
+          }
+          else {
+            e.innerHTML += "<br/>";
+            doItem();
+          }
+        },
+        doItem = function() {
+          if (i < menu.length) {
+            item = menu[i++];
+            j = 0;
+            doChar();
+          }
+        };
+      doItem();
+    </script>
+
+    <b>
+<br><br><br>
+    <a href="index.html"><font color="#00FFFF" face="Segoe UI">
+	<span style="text-decoration: none"><<<<<<..</span></font><font color="#FFFF00" face="Segoe UI">.</font></a></b>
+
+  	</p>
+
+  </body>
+</html>

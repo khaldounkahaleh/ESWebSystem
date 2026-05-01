@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+             var IDLE_TIMEOUT = 500; //seconds
+                var _idleSecondsCounter = 0;
+                document.onclick = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+                };
+                window.setInterval(CheckIdleTime, 1000);
+
+                function CheckIdleTime() {
+                _idleSecondsCounter++;
+                var oPanel = document.getElementById("SecondsUntilExpire");
+                if (oPanel)
+                oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                //alert("Time expired!");
+                document.location.href = "autologout.htm";
+                }
+                }
+        </script>
+        
+        
+<!----- scroll btn ---->	
+	<style>
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+        
+
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+	<a href ="index.html"><img src="images/logo.png"></a>
+	<div class="nav-links" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href ="index.html">HOME</a></li>
+			<li><a href ="Bulletins.html">BULLRTINS</a></li>
+			<li><a href ="SLA.html">SLA</a></li>
+			<li><a href ="contact.html">CONTACT</a></li>
+			<li><a href ="Links.html">LINKS</a></li>
+			<li><a href ="about.html">ABOUT</a></li>				
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Our Bulletins</h1>
+	</section>
+	
+<!--------course----------->
+
+<section class="course">
+<h1>Our Bulletins Category</h1>
+<p>Most effective news from ministries (PAM) - (MOI).</p>
+<div class="row">
+
+<div class="course-col">
+<h3>With updates came from Public authority and manpower (PAM) regulations, they announced early this week that employees aged 60 and above are exempted from.</h3>
+<p>
+1-	Medical insurance 503KD.<br>
+2-	Work permit 250KD fees.<br>
+3-	University certificate.<br>
+they can now proceed with residency renewal as normal or transfer as before with the normal fees.
+Also, PAM has updated some regulations regarding the VIP files (golden list) that employees can transfer from VIP files (Golden list) to private sector article 18, conditions applied for employees who didn’t complete one year with fees 300KD assigned by PAM committee.
+</p>
+</div>
+
+
+<div class="course-col">
+<h3>Ministry of health (MOH) has applied with new fees for medicines</h3>
+<p>MOH announced today that expats has to pay the amounts listed below to receive the medicines from the governments hospitals and clinics as per below.
+Service Type.<br>
+<h4>Health Center section</h4>
+Service Fees in KD2-Medicine collect fees KD5<br>
+<h4>Hospital accidents section</h4>
+Service Fees in KD10-Medicine collect fees KD5<br>
+<h4>Outpatient clinics</h4>
+Service Fees in KD10-dicine collect fees KD10<br>
+</p>
+</div>
+
+<div class="course-col">
+<h3>Kuwait Mobile ID &#1607;&#1608;&#1610;&#1578;&#1610; has new significant update</h3>
+<p>Ongoing with the ministries system integration, Kuwait Mobile ID has lunched an important update, once you access the app you will see the personal picture and your full name, after entering the password it will go the main page, in the app bottom go to Credentials, for the first time the app will ask to identified your credits by scanning your face then you will be able to add the following;<br>
+-Driving License (Car - Motorcycle - light or heave license)<br>
+-Birth Certificate (applicable only for who born in Kuwait)<br>
+-Car registration book<br>
+-CivilID information for dependents (Family members who has valid CivilID card)<br>
+in the main page there is update sign beside your CivilID number for refresh your information.</p>
+</div>
+
+<div class="course-col">
+<h3>PExpats over age 60 with no degree can now renew the residency</h3>
+<p>PAM announced today that expats over age 60 can do residency renewal in condition to provide private health insurance from approved insurance company with amount 503.5KD, this will also add charges to work permit 250KD and government insurance 50KD, this amount applicable for duration one year.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="course-col">
+<h3>MOI new regulation for CVV and family NOC request</h3>
+<p>General Administration of Residence Affairs (MOI) starting from today to receiving CVV and family NOC request with the following conditions.
+<h4>Commercial visit visa (CVV) request:</h4> Business must provide CVV form + passport copy + degree copy to apply for CVV.
+<h4>Family NOC visa request:</h4> Visa grand it only for kids only, salary minimum 500KD for the sponsor, Kids who above 5 years old are not applicable to get Family NOC visa neither Family visit visa..</p>
+</div>
+<div class="course-col">
+<h3>Kuwait announces new limits on visa transfers amid expat crackdown</h3>
+<p>Kuwait’s Public Authority for Manpower announced a decision banning the visa transfer of government workers article (17) to the private sector article (18), and placing restrictions on transferring dependent visas to private sector work visas. The transfer ban of government workers article (17) to the private sector article (18) exempts:<br>
+- Kuwaiti women’s husbands and children.<br>
+- The wives of Kuwaitis.<br>
+- Palestinians with appropriate travel documents.<br>
+- Those health care workers such as doctors and nurses..</p>
+</div>
+<div class="course-col">
+<h3>Expats over age 60 with no degree have until year's end to leave Kuwait</h3>
+<p>Expats in Kuwait over the age of 60 without a degree have until the end of the year 2020 to leave the country. This follows the news that Kuwait would stop issuing work permits for expats aged over 60 without a university degree, and will not extend any residencies and visas beyond August 31. Work permits for over 60s without a university degree will no longer be issued from January 1, 2021 and applies to all those who hold a higher secondary certificate or lower..</p>
+</div>
+</div>
+
+</section>	
+
+<!-------Facilities-------->
+<section class="facilities">
+	<h1>ES Department Overviews</h1>
+	<p>Overviews for ES department - work space and team.</p>
+	
+	<div class="row">
+	<div class="facilities-col">
+	<img src="images/office1.jpeg">
+	<h3>ES Meeting Room</h3>
+	<p>ES Meeting Room were ES employees gathering and meeting for business process and improve.</p>
+	</div>
+<!-----removed------
+	<div class="facilities-col">
+	<img src="images/office2.jpeg">
+	<h3>Largest playing Ground</h3>
+	<p>lorem ipsum dolor sit amet, consecteture adipiscing elite. pellentesquem aliquet turpis nulla</p>
+	</div>
+--->
+	<div class="facilities-col">
+	<img src="images/office3.jpeg">
+	<h3>ES Working Space</h3>
+	<p>ES Working Space were ES employees manufacturing a great loop of work and serve AI employees regarding their residencies.</p>
+	</div>
+	
+	<div class="facilities-col">
+	<img src="images/office4.jpeg">
+	<h3>ES Entrance Hall</h3>
+	<p>ES entrance space were placed in the 1st floor in KRe tower, big reception can fit a plenty employees for serving their requests.</p>
+	</div>
+
+	</div>
+</section>	
+
+<!------scroll option--------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+	
+<!-------footer------------>	
+	<section class="footer">
+	<h4>About Us</h4>
+	<p>lorem ipsum dolor sit amet, consecteture adipiscing elite. pellentesquem aliquet turpis nulla, <br>eleifend faucibus est sollicitudin ut. Maecenas ut venenatis ex. et dapibus perus.</p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> By Easy Tutorials</p>
+	</section>
+	
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+</script>
+
+
+</body>
+
+</html>
