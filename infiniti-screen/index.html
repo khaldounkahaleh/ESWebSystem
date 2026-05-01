@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+</html>
+<body>
+<div id="container"></div>
+
+<div class="controls">
+  <button id="GoHome">HOME</button>
+  <input type="file" id="audioFileInput" accept="audio/*" />
+  <label for="audioFileInput">Select Audio</label>
+  <button id="resetButton">Reset Simulation</button>
+  <button id="saveWeightsButton">Save Weights</button>
+  <input type="file" id="loadWeightsInput" style="display: none;" />
+  <label for="loadWeightsInput">Load Weights</label>
+  <button id="toggleDebugButton">Toggle Debug</button>
+</div>
+
+<div id="debugPanel">
+  <div id="debugInfo"></div>
+</div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
