@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <!--- BarCode generator - QR Code by Eng.Khaldoun Kahaleh-->
+     <div class="box">
+        <h3><font color="#FFFF00">ES-Webservices</font></h3><br>
+        <div class="qr-header">
+            <h1>Generate QR Code</h1>
+            <input type="text" placeholder="Type your text or URL" id="qr-text">
+            <div>
+            <label for="sizes">Select Size:</label>
+            <select id="sizes">
+                <option value="100">100x100</option>
+                <option value="150">150x150</option>
+                <option value="200">200x200</option>
+                <option value="250">250x250</option>
+                <option value="300">300x300</option>
+                <option value="350">350x350</option>
+                <option value="400">400x400</option>
+                <option value="450">450x450</option>
+                <option value="500">500x500</option>
+                <option value="550">550x550</option>
+            </select>
+        </div>
+        </div>
+        <div class="qr-body"></div>
+        <div class="qr-footer">
+            <a href="" id="generateBtn">Generate</a>
+            <a href="" id="downloadBtn" download="QR_Code.png">Download</a>
+            </div>
+            <p align="center">
+            <br><b><a href="../index.html"><span style="text-decoration: none">
+			<font color="FFFF00">Go Home </font></span></a><font color="FFFF00">
+			</font></b>
+			<b><a href="index.html"><span style="text-decoration: none">
+			<font color="#FFFF00">  -  Refresh</font></span></a><font color="#FFFF00">
+			</font></b>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</body>
+</html>
