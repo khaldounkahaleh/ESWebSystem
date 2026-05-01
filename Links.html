@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+             var IDLE_TIMEOUT = 50; //seconds
+                var _idleSecondsCounter = 0;
+                document.onclick = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+                };
+                window.setInterval(CheckIdleTime, 1000);
+
+                function CheckIdleTime() {
+                _idleSecondsCounter++;
+                var oPanel = document.getElementById("SecondsUntilExpire");
+                if (oPanel)
+                oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                //alert("Time expired!");
+                document.location.href = "autologout.htm";
+                }
+                }
+        </script>
+
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+	<a href ="index.html"><img src="images/logo.png"></a>
+	<div class="nav-links" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href ="index.html">HOME</a></li>
+			<li><a href ="Bulletins.html">BULLRTINS</a></li>
+			<li><a href ="SLA.html">SLA</a></li>
+			<li><a href ="contact.html">CONTACT</a></li>
+			<li><a href ="Links.html">LINKS</a></li>
+			<li><a href ="about.html">ABOUT</a></li>				
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Useful Links System</h1>
+	</section>
+	
+<!----- about us contain ----->
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+		<h1>Click the Link below.</h1>
+		<br>
+		<font size="5">
+		<div class="contact-col">
+
+<a href="https://www.paci.gov.kw/Default.aspx">The Public Authority of Civil Information (PACI)</a><br>
+<a href="https://www.moi.gov.kw/main/eservices/residence/fines-enquiry">Residency Fine Payment</a><br>
+<a href="https://www.moi.gov.kw/main/eservices/gdt/violation-enquiry?civilId=0">Traffic Fine Payment</a><br>
+<a href="https://insonline.moh.gov.kw/">Health Insurance for Residency</a><br>
+<a href="https://alghanim.sharepoint.com/sites/ES-Sight">ES Sight Website</a>
+
+</br>			
+		
+		</div>
+   		
+		<p><a href="index.html" class="hero-btn red-btn">Home Page</a>
+		</div>
+		<div class="about-col1">	
+		<img src="images/hyperlink.jpg">
+	</div>
+
+
+</section>	
+	
+	
+<!-------footer------------>	
+	<section class="footer">
+	<h4>About Us</h4>
+	<p>Learn about Employee services (ES) process and services.</p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-handshake-o"></i> By Employee Services Experts®</p>
+	</section>
+	
+
+
+
+
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+</script>
+
+
+</body>
+
+</html>

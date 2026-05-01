@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+             var IDLE_TIMEOUT = 50; //seconds
+                var _idleSecondsCounter = 0;
+                document.onclick = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+                };
+                window.setInterval(CheckIdleTime, 10000);
+
+                function CheckIdleTime() {
+                _idleSecondsCounter++;
+                var oPanel = document.getElementById("SecondsUntilExpire");
+                if (oPanel)
+                oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                //alert("Time expired!");
+                document.location.href = "index.html";
+                }
+                }
+        </script>
+
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+	<a href ="index.html"><img src="images/logo.png"></a>
+	<div class="nav-links" id="navLinks">
+	<i class="fa fa-times" onclick="hideMenu()"></i>
+		<ul>
+			<li><a href ="index.html">HOME</a></li>
+			<li><a href ="Bulletins.html">BULLRTINS</a></li>
+			<li><a href ="SLA.html">SLA</a></li>
+			<li><a href ="contact.html">CONTACT</a></li>
+			<li><a href ="Links.html">LINKS</a></li>
+			<li><a href ="about.html">ABOUT</a></li>							
+		</ul>
+	</div>
+	<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Documents copy system</h1>
+	</section>
+	
+<!----- about us contain ----->
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+		<h1><span style="font-size: 18pt">Please click to view the authorized 
+		signatory below</span> <i class="fa fa-spinner" aria-hidden="true">
+		<a href="AS_new.html"><font size="5">Click here for new form</font></a></i></h1>
+		&nbsp;<!-------Table data------------><a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/companies_letter_2025.pdf" target="_blank">Click 
+		here for MOI approval Letter</a><font size="5"><div class="about-col">
+	<table border="1" width="100%">
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#FFFF00">
+			<b>Company Name</b></td>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#FFFF00">
+			<b>PAM</b></td>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#FFFF00">
+			<b>Traffic Department</b></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">YAAS</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/YAAS%20AS%20Online%20new.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/YAAS%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" height="76" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Ford</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275" height="76">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20Auto.%20Online%20New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275" height="76">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Ford%20-%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Barwil - </span></font>
+			<span style="text-decoration: none; font-weight: 700">
+			<font face="Segoe UI"><font size="5">Wilhelmsen</font> </font>
+			</span></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Barwil%20AS%20Online-%20new.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/barwil-not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Honda</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Honda%20AS%20Online%20New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL Files Certificates/Authorized Signatory/traffic/Honda - Traffic Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Xcite</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Xcite%20AS%20Online%20New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/X-cite%20-%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Costa</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Costa%20AS%20Online%20New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/COSTA%20-%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Engineering</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS Alghanim Eng Online New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Alghanim%20Eng.%20-%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Qimma - Chery</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS-Qima motive online New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+			<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Al%20Qimma%20Motive%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Power Auto</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS Power Auto Online new.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="2400" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Power%20Auto%20-%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Alamana Auto</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS Alamana Auto  For Sale of Automotive Vehicles Online new.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Al-Amana%20Auto%20for%20Sale%20of%20Automotive%20-%20Authorized%20Signatories%20for%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Alamana Ind.</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Alamana Ind. AS Online New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Al-Amana%20Industries%20-%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">AVIS</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Avis AS Online New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/AVIS%20-%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Alamana Int.</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Alamana International AS Online.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Alamana%20International%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">GTRC</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS GTRC Online New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/GTRC%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Enaya</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Enaya AS Online Certificate.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Enaya%20-%20Traffic%20Department.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Alghanim Wasata</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Wasata insurance AS Online new.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/not-found.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Safat Home</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS Safat Home Online.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Safat%20Home%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font face="Segoe UI" size="5">
+			<span style="text-decoration: none; font-weight:700">Atlas AirCargo</span></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Atlas AS Online New.pdf" target="_blank">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Atlas%20alghanim%20-%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">Alghanim Global - JAC</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20Globale%20for%20cars%20with%20engins%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Alghanim%20Global%20for%20sale%20Automotive%20Vehicles%20-%20Traffic%20authorization%20signatory.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">SANAM Cars - Hongqi</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Sanam%20cars%20co%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/Sanam%20cars%20Co.%20-%20Traffic%20authorization%20signatory.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">YAAS Installment</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/YAAS%20Instalment%20AS%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">KYA Office clearance</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/KYA%20Clearance%20Offiice%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">Alghanim Sahara Trans</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Sahara%20Trans%20AS%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/new/Alghanim%20Sahari%20-%20Traffic%20authorization%20signatory%20-%20Sahari.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">IUGTC</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/IUGTC-AS.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Alghanim Industries</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20Industries%20AS%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">Alamana Automotive Holding</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alamana%20Automotive%20Holding%20Online%20new.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Alghanim industries holding group</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20industries%20holding%20group%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Altaqadum Real state</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Altaqadum%20AS%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">AI Insulation holding</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AI%20insulation%20holding%20AS%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5">EV Global - BYD</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/EV%20Global%20for%20selling%20Vehicles%20with%20engines.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/EV%20Global%20Co.%20-%20Authorized%20Signatories%20for%20Traffic%20Department.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Waseela Golden</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Waseela%20new.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Takhzeen General Trading</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS-Takhzen%20General%20trading%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Ejary Realstate</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Ejary%20realstate.%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Alghanim Union for Cars</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20union%20for%20cars.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font size="5" color="#0000FF">Albidaa International share</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Albidaa%20International%20share%20AS%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font color="#0000FF" size="5">AI Kuwait</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AI%20Kuwait%20New%20AS.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font color="#0000FF" size="5">AI OPCO</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AI%20OPCO%20AS%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font color="#0000FF" size="5">Alghanim Development</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20development%20for%20buy%20and%20sale%20share%20online%20new.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font color="#0000FF" size="5">Ladina</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Ladina%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<b><font color="#0000FF">United International for Trading Wholesale 
+			&amp; Retail</font></b></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/United%20international%20trading%20AS%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF"><b>Alghanim Media For Advertising &amp; Publishing
+			</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20Media%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="4"><b>AS Expando General Trading</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Expando%20General%20Trading%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="4"><b>AS Retalex General Trading</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Retalex%20General%20Trading%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		</font>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="5"><b>Almutawer Real state</b></font></td>
+			<font size="5">
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Almutawer%20Realstate%20AS%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="5"><b>Alamana Holding</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alamana%20Holding%20Online%20new.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="5"><b>Alghanim Global for Realestate</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alghanim%20Globale%20for%20realstate%20Online%20New.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="5"><b>AI Universal for buy and sale 
+			shares</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AI%20universal%20AS%20Online.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="5"><b>Washingtonian </b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/Washingtonia%20AS%20Online%20new.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+		<tr>
+			<td bordercolordark="#000000" align="center" width="275" bgcolor="#EEEEEE">
+			<font color="#0000FF" size="5"><b>Alamana Services</b></font></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/AS%20Alamana%20Services%20Online%20new.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+			<td bordercolordark="#000000" align="center" width="275">
+		<font size="5">
+			<a target="_blank" href="file://algfs.alghanim.com/hr/GS-ShareFolder/MOSAL_Reports/MOSAL%20Files%20Certificates/Authorized%20Signatory/traffic/not-found.pdf">
+			<img border="0" src="images/Download-2[1].png" width="80%" height="50"></a></td>
+		</tr>
+	</table>
+	<p align="center"><a href="index.html" class="hero-btn red-btn">Home Page</a>
+	</div>
+
+</section>	
+	
+	
+<!-------footer------------>	
+	<section class="footer">
+	<h4>About Us</h4>
+	<p>Learn about Employee services (ES) process and services.</p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-handshake-o"></i> By Employee Services Experts®</p>
+	</section>
+
+
+
+
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+</script>
+
+
+</body>
+
+</html>

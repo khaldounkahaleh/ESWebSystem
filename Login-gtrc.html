@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>ES Web-Services 2023</title>
+	<meta name="author" content="Khaldoun Kahaleh">
+	<link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?
+	family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+             var IDLE_TIMEOUT = 50; //seconds
+                var _idleSecondsCounter = 0;
+                document.onclick = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onmousemove = function() {
+                _idleSecondsCounter = 0;
+                };
+                document.onkeypress = function() {
+                _idleSecondsCounter = 0;
+                };
+                window.setInterval(CheckIdleTime, 1000);
+
+                function CheckIdleTime() {
+                _idleSecondsCounter++;
+                var oPanel = document.getElementById("SecondsUntilExpire");
+                if (oPanel)
+                oPanel.innerHTML = (IDLE_TIMEOUT - _idleSecondsCounter) + "";
+                if (_idleSecondsCounter >= IDLE_TIMEOUT) {
+                //alert("Time expired!");
+                document.location.href = "autologout.htm";
+                }
+                }
+        </script>
+
+</head>
+<body class="body">
+	
+
+<!----- login form ----->
+	<form>
+	<div class="login-form" color="white">
+	<h1><font color="white">Login</font></h1><br>
+	<input type="Username" name="text3" placeholder="Username" class="input"><br>
+	<input type="Password" name="text1" placeholder="Password" class="input"><br>
+	<p>Forget Password?</p><br>
+	<input type="button" value="Submit" name="Submit" class="button" onclick=javascript:validate(text1.value,"GTRC2024",text3.value,"admin") > 
+	<!----<button type="submit" onclick=javascript:validate(text1.value,"123")>submit</button><br><br>--->
+	<p>Already not authorized... <a href="index.html" color="white"><font color="lightskyblue">Click here</font></a></p>
+	<p>For Donation... <a href="OnlinePayment.htm" color="white"><font color="lightskyblue">Click here</font></a></p>
+	</div>
+	</form>
+	
+<script language = "javascript">
+function validate(text1,text2,text3,text4)
+{
+ if (text1==text2 && text3==text4)
+ load('\passports.html');
+ else
+ {
+  load('\error.html');
+ }
+}
+function load(url)
+{
+ location.href=url;
+}
+</script>	
+
+	
+<!-------footer------------>	
+	<section class="footer">
+	
+	<p><font color="white">Employee services (ES) process and services.</font></p>
+	<div class="icons">
+	<i class="fa fa-facebook"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-instagram"></i>
+	<i class="fa fa-linkedin"></i>
+	</div>
+	<p><font color="white">Made with <i class="fa fa-handshake-o"></i> By Employee Services Experts®</font></p>
+	</section>
+
+
+
+<!-------Javascript for toggle menu-------->
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+	navLinks.style.right = "0";
+}
+	function hideMenu(){
+	navLinks.style.right = "-200px";
+}
+</script>
+
+
+</body>
+
+</html>
