@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookup PF# - CivilID#</title>
+    <!-- Include SheetJS library via CDN -->
+    <link rel="icon" type="image/x-icon" href="files/ESlogo.jpg">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.5/xlsx.full.min.js"></script>
+    
+    <style>
+    .btn{
+    width: 180px;
+    height: 48px;
+    background: #21d615;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}   
+    .btnm{
+    width: 180px;
+    height: 48px;
+    background: #1034aa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}   
+        
+    .btnx{
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    border: solid 1px #1034aa;
+    border-bottom: solid 1px #90c2ff;
+    background-color: coral;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #fff;
+    }
+        
+    .input{
+    padding: 10px 40px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    border: solid 1px #1034aa;
+    border-bottom: solid 1px #90c2ff;
+    background-color: transparent;
+    font-weight: bolder;
+    }
+        
+    </style>
+    
+</head>
+<body>
+
+     <!-- The text element -->
+    <a href="index.html">HOME</a><a style="color: white;" id="textToCopy">\\algfs.alghanim.com\Emp_Files\webdata\talentdata.xlsx</a> <a style="color: white;" id="textToCopy1">\\algfs.alghanim.com\Emp_Files\webdata\formalitiesdata.xlsx</a>
+    <h2 style="text-align: center">Search by data & values..</h2> 
+    <div>
+<!-- The button to trigger the action -->
+<button onclick="copyParagraphText()" class="btn">Get Talenhub data</button>
+<button onclick="copyParagraphText1()" class="btn">Get Formalities data</button>
+<button onclick="window.location.reload();" class="btnm">Refresh Page</button><br><br> 
+    
+    <input class="input" type="file" id="fileInput" accept=".xlsx, .xls, .csv" />
+    <br><br>  
+    
+    <h2 for="searchInput">Enter Search Value: </h2>
+    <input class="input" type="text" id="searchInput" placeholder="Type to search..." />
+    <button class="btnx" id="searchBtn">Search</button>
+</div>
+    <h3>Results:</h3>
+    <div id="resultContainer"></div>
+    
+</body>
+     
+    <script>
+        
+    //copy file root    
+        function copyParagraphText() {
+  // Get the text content of the element
+  var text = document.getElementById("textToCopy").innerText;
+
+  // Use the Clipboard API to copy it
+  navigator.clipboard.writeText(text).then(() => {
+    // Optional: Success message
+    alert("Text successfully copied!");
+  }).catch(err => {
+    console.error("Failed to copy text: ", err);
+  });
+} 
+
+function copyParagraphText1() {
+  // Get the text content of the element
+  var text = document.getElementById("textToCopy1").innerText;
+
+  // Use the Clipboard API to copy it
+  navigator.clipboard.writeText(text).then(() => {
+    // Optional: Success message
+    alert("Text successfully copied!");
+  }).catch(err => {
+    console.error("Failed to copy text: ", err);
+  });
+} 
+ //loading the data from excel sheet       
+    
+    let excelData = [];
+
+// Read the Excel file when uploaded
+document.getElementById('fileInput').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+        const data = new Uint8Array(e.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+
+        // Get the first worksheet
+        const firstSheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[firstSheetName];
+
+        // Convert worksheet to JSON array of objects
+        excelData = XLSX.utils.sheet_to_json(worksheet);
+        alert("Excel file loaded successfully!");
+    };
+
+    reader.readAsArrayBuffer(file);
+});
+
+// Perform lookup on click
+document.getElementById('searchBtn').addEventListener('click', function() {
+    const searchValue = document.getElementById('searchInput').value.trim().toLowerCase();
+    const container = document.getElementById('resultContainer');
+    container.innerHTML = '';
+
+    if (!excelData.length) {
+        container.innerHTML = '<p>Please upload an Excel file first.</p>';
+        return;
+    }
+
+    // Filter rows where any column value matches the search term
+    const results = excelData.filter(row => {
+        return Object.values(row).some(val => 
+            String(val).toLowerCase().includes(searchValue)
+        );
+    });
+
+    if (results.length === 0) {
+        container.innerHTML = '<p>No matching data found.</p>';
+        return;
+    }
+
+    // Build an HTML table for results
+    let table = '<table border="1" cellpadding="5"><tr>';
+    const headers = Object.keys(results[0]);
+    headers.forEach(h => table += `<th>${h}</th>`);
+    table += '</tr>';
+
+    results.forEach(row => {
+        table += '<tr>';
+        headers.forEach(h => table += `<td>${row[h] || ''}</td>`);
+        table += '</tr>';
+    });
+    table += '</table>';
+
+    container.innerHTML = table;
+});
+
+    
+    </script>
+
+</html>
